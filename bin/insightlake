@@ -44,5 +44,5 @@ for f in $EDP_HOME/libs/*.jar; do
     CLASSPATH=${CLASSPATH}:$f;
 done
 
-echo "Starting WF backend ..."
-java -jar -Dthin.root=$EDP_HOME/libs/thin/root $EDP_HOME/libs/thin/root/edp-data-validator-0.0.1-SNAPSHOT.jar com.insightlake.edp.data.validator.Application  --spring.config.name=mysql --spring.config.location=file:///$EDP_HOME/conf/mysql.properties 
+echo "Starting Data Validator ..."
+java -jar -Dthin.root=$EDP_HOME/libs/thin/root $EDP_HOME/libs/thin/root/edp-data-validator-0.0.1-SNAPSHOT.jar com.insightlake.edp.data.validator.Application  --spring.config.name=mysql --spring.config.location=file:///$EDP_HOME/conf/mysql.properties /Users/vijaygaur/wfs1.txt /Users/vijaygaur
